@@ -1,0 +1,210 @@
+﻿body
+{
+	font-size:12px;
+	/*font-family:宋体;*/
+}
+.left
+{
+    float:left;	
+    width:48%;
+}
+.right
+{
+    float:left;
+    width:48%;
+    margin-left:20px;
+}
+.title
+{
+    border-bottom:solid 1px #ccc;	
+}
+.photocontainer
+{
+	margin-top:10px;
+	background:url("../image/bg_120.gif") no-repeat left top;   
+	padding:7px 12px 12px 7px;                                        
+}  
+.uploadtooltip
+{
+	margin-top:10px;
+	color: #555;	
+	line-height:150%;
+}
+.uploaddiv
+{
+	margin-top:10px;
+}
+input
+{
+	padding:3px;  
+}
+#Step2Container
+{
+/*display:none;	*/
+}
+#Canvas
+{
+    position: relative;
+    width:350px;
+    height:266px;
+    border:2px solid #888888;
+    overflow:hidden;	          
+    cursor:pointer;	
+}
+#Canvas2
+{
+    position: relative;
+    width:350px;
+    height:266px;
+    border:2px solid #888888;
+    overflow:hidden;	          
+    cursor:pointer;	
+}
+#Canvas3
+{
+    position: relative;
+    width:350px;
+    height:266px;
+    border:2px solid #888888;
+    overflow:hidden;	          
+    cursor:pointer;	
+}
+#Canvas4
+{
+    position: relative;
+    width:350px;
+    height:266px;
+    border:2px solid #888888;
+    overflow:hidden;	          
+    cursor:pointer;	
+}
+.smallbig
+{
+    cursor:pointer;	
+}
+ #bar
+{
+	 width: 211px;
+     height: 18px;
+     background-image: url("../image/track.gif");
+     background-repeat: no-repeat;
+     position: relative;
+ }
+.child
+{
+    width: 11px;
+    height: 16px;
+    background-image: url("../image/grip.gif");
+    background-repeat: no-repeat;
+    left: 0;top:2px;
+    position: absolute;
+    left:100px;
+}
+.imagePhoto
+{
+	border-width:0px;
+	position:relative;
+	top: 26px;
+	left: 51px;
+}
+#IconContainer1
+{
+	position:relative;    
+	left:1px;
+	top:-212px;    
+	      	          	
+}  
+#IconContainer1 img
+{
+	FILTER:alpha(opacity=10);
+	opacity:0.6;    
+	background-color:#ccc;	   
+}
+#ImageDragContainer1 
+{
+	border: 1px solid #ccc;
+    width: 280px;
+    height: 210px;
+    cursor: pointer;
+    position: relative;
+    top: 27px; 
+    left: 1px;
+    overflow: hidden;
+    z-index:1;
+}   
+
+#IconContainer2
+{
+	position:relative;    
+	left:-2px;
+	top:-152px;    
+	      	          	
+}  
+#IconContainer2 img
+{
+	FILTER:alpha(opacity=10);
+	opacity:0.6;    
+	background-color:#ccc;	   
+}
+#ImageDragContainer2
+{
+	border: 1px solid #ccc;
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+    top: 57px; 
+    left: -2px	;
+    overflow: hidden;
+    z-index:1;
+}   
+#IconContainer3
+{
+	position:relative;    
+	left:-2px;
+	top:-107px;    
+	      	          	
+}  
+#IconContainer3 img
+{
+	FILTER:alpha(opacity=10);
+	opacity:0.6;    
+	background-color:#ccc;	   
+}
+#ImageDragContainer3
+{
+	border: 1px solid #ccc;
+    width: 140px;
+    height: 105px;
+    cursor: pointer;
+    position: relative;
+    top: 80px; 
+    left: -2px	;
+    overflow: hidden;
+    z-index:1;
+}   
+#IconContainer4
+{
+	position:relative;    
+	left:-2px;
+	top:-82px;    
+	      	          	
+}  
+#IconContainer4 img
+{
+	FILTER:alpha(opacity=10);
+	opacity:0.6;    
+	background-color:#ccc;	   
+}
+#ImageDragContainer4
+{
+	border: 1px solid #ccc;
+    width: 105px;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+    top: 93px; 
+    left: -1px	;
+    overflow: hidden;
+    z-index:1;
+}   

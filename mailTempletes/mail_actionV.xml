@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templete>
+	<discription>项目资助成功</discription>
+	
+    <!--邮件中显示的发送人地址，非实际地址-->
+    <sendEmailAddress>no-reply@weiangels.org</sendEmailAddress>
+	
+    <!--邮件中显示的发送人名称，非实际名称-->
+    <sendUserName>微天使</sendUserName>
+	
+	<!--邮件是否为Html格式-->
+	<isBodyHtml>true</isBodyHtml>
+	
+	<!--邮件主题-->
+    <subject>
+        <![CDATA[
+        您创建的${projectName}项目达成了承诺目标
+        ]]>
+    </subject>
+	
+	<!--邮件内容-->
+    <content>
+        <![CDATA[
+		<p>
+		很高兴！<br />
+		您所创建的${projectName}项目最终达成承诺目标。<br />
+		所有承诺金额已经自动由冻结转变为支付状态，总承诺金额为${amount}, 您可以向微天使提交提取项目资金申请了。<br />
+		</p>
+		<a href="${SiteUrl}/account/message.aspx?project=${projectId}">
+			${SiteUrl}/account/message.aspx?project=${projectId}
+		</a>
+        ]]>
+    </content>
+    
+    <!--模板附件，填写附件的物理地址，每个附件对应一个attachment节点-->
+	<!--
+    <attachments>
+        <attachment fileName="d:/attachement/testdoc.doc"/>
+    </attachments>
+	-->
+</templete>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templete>
+
+	<discription>用户发送调查邮件</discription>
+	
+    <!--邮件中显示的发送人地址，非实际地址-->
+    <sendEmailAddress>no-reply@weiangels.org</sendEmailAddress>
+	
+    <!--邮件中显示的发送人名称，非实际名称-->
+    <sendUserName>微天使</sendUserName>
+	
+	<!--邮件是否为Html格式-->
+	<isBodyHtml>true</isBodyHtml>
+	
+	<!--邮件主题-->
+    <subject>
+        <![CDATA[
+       ${projectName}的项目调查
+        ]]>
+    </subject>
+	
+	<!--邮件内容-->
+    <content>
+		<![CDATA[
+		<p>${prjNickName}邀请您参加${projectName}的项目调查，调查将于${deadline}结束</p>
+		<p>填写回馈信息，请点击下面的链接</p>
+		<p>
+			<a href="http://localhost/WeiAngels/Project/Survey.aspx?ReportID=${reportID}">
+				http://localhost/WeiAngels/Project/Survey.aspx?ReportID=${reportID}
+			</a>
+		</p>
+        ]]>
+    </content>
+    
+    <!--模板附件，填写附件的物理地址，每个附件对应一个attachment节点-->
+	<!--
+    <attachments>
+        <attachment fileName="d:/attachement/testdoc.doc"/>
+    </attachments>
+	-->
+</templete>

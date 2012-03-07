@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templete>
+	<discription>项目资助被取消</discription>
+	
+    <!--邮件中显示的发送人地址，非实际地址-->
+    <sendEmailAddress>no-reply@weiangels.org</sendEmailAddress>
+	
+    <!--邮件中显示的发送人名称，非实际名称-->
+    <sendUserName>微天使</sendUserName>
+	
+	<!--邮件是否为Html格式-->
+	<isBodyHtml>true</isBodyHtml>
+	
+	<!--邮件主题-->
+    <subject>
+        <![CDATA[
+        ${nickName}取消了${projectName}项目的资助
+        ]]>
+    </subject>
+	
+	<!--邮件内容-->
+    <content>
+        <![CDATA[
+		<p>
+			很遗憾！<br />
+			您所承诺资助的${projectName}项目由创建者${nickName}取消了该项目的资助。<br />
+			您的承诺金额已经被自动退回到您的账户。您无需做任何操作。
+		</p>
+		</p>
+		${nickName}说：<br />
+		${cancelReason}
+		</p>
+		<a href="http://localhost/WeiAngels/account/message.aspx?prj=${projectId}">
+			http://localhost/WeiAngels/account/message.aspx?prj=${projectId}
+		</a>
+        ]]>
+    </content>
+    
+    <!--模板附件，填写附件的物理地址，每个附件对应一个attachment节点-->
+	<!--
+    <attachments>
+        <attachment fileName="d:/attachement/testdoc.doc"/>
+    </attachments>
+	-->
+</templete>

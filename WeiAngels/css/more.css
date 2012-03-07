@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+.main { width:980px; height:auto; margin:-1px auto 50px auto; background:url(../images/main_bottom.png) no-repeat bottom center; }
+.mainbody { background:#fff; border-left:1px solid #c1e2e9; border-right:1px solid #c1e2e9; padding:50px 112px; height:auto; overflow:hidden; }
+.mainbottom { height:40px; }
+.info { background:#29758f; padding:20px; }
+.more_info { width:980px; margin:0 auto; font-size:23px; color:#fff; font-weight:bold; }
+li.i { width:98px; }
+.more_item { width:357px; margin:20px 10px; height:104px; float:left; }
+.more_item img { float:left; }
+.more_item p { float:left; margin-left:20px; line-height:16px; overflow:hidden; width:237px; }
+
+.dialog_doingMore { display: none; position: fixed; z-index:999; top:0px; left:200px; text-align:left; border:10px solid #999; border-radius:8px; width:670px; background:#FFF; }
+/*兼容IE6浮动*/
+*html .dialog_doingMore { position:absolute; top:expression(eval(document.documentElement.scrollTop + (document.documentElement.clientHeight - this.clientHeight) / 2));
+ left:expression(eval(document.documentElement.scrollLeft + (document.documentElement.clientWidth - this.clientWidth) / 2));
+}
+.doingMore_head { background-color: #E8E8E8; height:52px; font-size:14px; font-weight:bold; line-height:52px; }
+.doingMore_title { float:left; display:inline; text-indent:1em; }
+.doingMore_head .close { float:right; display:inline; margin-right:17px; cursor:pointer; color: #999999; }
+.doingMore_content { font-weight:bold; padding:20px 15px; position:relative; }
+.doingMore_content p {margin-bottom:15px;}
+.doingMore_content p.left {float:left; display:inline; width:310px;}
+.doingMore_content p.left .text {width:90%;}
+.doingMore_content p.right {float:right; display:inline; width:310px;}
+.doingMore_content p.right .text {width:96%;}
+.doingMore_content .text { padding:5px; width:98%;}
+.doingMore_content label {display:block; margin-bottom:5px;}
+.doingMore_input { background: #e3f1fe; padding: 20px;}
+.doingMore_button {border:none; border-radius:5px; background:#55a4f1; color:#FFF; width:100px; height:30px; line-height:30px; font-weight:bold; cursor:pointer; vertical-align:middle; margin-right:10px;}
+.doingMore_button:hover {background:#0099ff;} 
+/*Footer*/
+.footer { height:309px; margin:0 auto; background:url(../images/footer_bg2.gif) repeat-x; }
+

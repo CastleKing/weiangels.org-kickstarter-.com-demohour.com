@@ -1,0 +1,395 @@
+-------------------------------------------------------------------------
+2011-08-16 10:22:05
+Message:
+	索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+Source:
+	mscorlib
+StackTrace:
+	   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object[] args)
+   在 Bingo.Infrastructure.Emails.TempleteManager.CreateTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 78
+   在 Bingo.Infrastructure.Emails.TempleteManager.GetTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 57
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(IList`1 mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 132
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(MailAddress mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 160
+   在 ProjectApplication_ProposalDetail.btnApproved_Click(Object sender, EventArgs e)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2011-08-16 10:26:38
+Message:
+	索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+Source:
+	mscorlib
+StackTrace:
+	   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object[] args)
+   在 Bingo.Infrastructure.Emails.TempleteManager.CreateTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 78
+   在 Bingo.Infrastructure.Emails.TempleteManager.GetTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 57
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(IList`1 mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 132
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(MailAddress mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 160
+   在 ProjectApplication_ProjectDetail.btnApproved_Click(Object sender, EventArgs e)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2011-08-16 10:32:07
+Message:
+	索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+Source:
+	mscorlib
+StackTrace:
+	   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object[] args)
+   在 Bingo.Infrastructure.Emails.TempleteManager.CreateTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 78
+   在 Bingo.Infrastructure.Emails.TempleteManager.GetTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 57
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(IList`1 mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 132
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(MailAddress mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 160
+   在 ProjectApplication_ProposalDetail.btnApproved_Click(Object sender, EventArgs e)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2011-08-16 10:40:27
+Message:
+	索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+Source:
+	mscorlib
+StackTrace:
+	   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object[] args)
+   在 Bingo.Infrastructure.Emails.TempleteManager.CreateTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 78
+   在 Bingo.Infrastructure.Emails.TempleteManager.GetTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 57
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(IList`1 mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 132
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(MailAddress mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 160
+   在 ProjectApplication_ProjectDetail.btnApproved_Click(Object sender, EventArgs e)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2011-08-16 10:44:23
+Message:
+	索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+Source:
+	mscorlib
+StackTrace:
+	   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object[] args)
+   在 Bingo.Infrastructure.Emails.TempleteManager.CreateTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 78
+   在 Bingo.Infrastructure.Emails.TempleteManager.GetTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 57
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(IList`1 mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 132
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(MailAddress mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 160
+   在 ProjectApplication_ProposalDetail.btnApproved_Click(Object sender, EventArgs e)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2011-08-16 10:49:29
+Message:
+	索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+Source:
+	mscorlib
+StackTrace:
+	   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object[] args)
+   在 Bingo.Infrastructure.Emails.TempleteManager.CreateTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 78
+   在 Bingo.Infrastructure.Emails.TempleteManager.GetTemplete(String templeteName) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\TempleteManager.cs:行号 57
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(IList`1 mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 132
+   在 Bingo.Infrastructure.Emails.BingoEmail.Send(MailAddress mailTo, String templeteName, IDictionary`2 mailDatas) 位置 C:\Projects\WeiAngels\code\WebAngels\Bingo.Infrastructure\Emails\BingoEmail.cs:行号 160
+   在 ProjectApplication_ProjectDetail.btnApproved_Click(Object sender, EventArgs e)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2011-08-16 12:26:44
+Message:
+	列名 'ID' 无效。
+列名 'CreatedTime' 无效。
+列名 'CreatedBy' 无效。
+列名 'Status' 无效。
+列名 'Category' 无效。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText)
+   在 WeiAngel.WADAL.DBHelper.Query(String sql) 位置 C:\Projects\WeiAngels\code\WebAngels\WADAL\DBHelper.cs:行号 85
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:05:37
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:05:39
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:05:42
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:05:44
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:05:45
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:06:00
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:06:04
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:07:02
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:07:05
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:07:08
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:09:43
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:09:48
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+2012-02-27 10:09:49
+Message:
+	无法打开登录所请求的数据库 "WeiAngel"。登录失败。
+用户 'saa' 登录失败。
+Source:
+	.Net SqlClient Data Provider
+StackTrace:
+	   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 WAMembershipProvider.ValidateUser(String username, String password)
+-------------------------------------------------------------------------

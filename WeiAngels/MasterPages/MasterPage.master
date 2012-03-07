@@ -1,0 +1,618 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPages_MasterPage, App_Web_masterpage.master.7371103c" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>微天使</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../css/main.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="../css/thickbox.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="../js/jQ_extend.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../iepngfix/iepngfix_tilebg.js"></script>
+    <script type="text/javascript" src="../js/dialog.js"></script>
+    <script src="../js/thickbox.js" type="text/javascript"></script>
+    <script src="../js/weiangels.js" type="text/javascript"></script>
+    <script src="../js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+//        function load() {
+//            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+//        }
+
+//        function EndRequestHandler() {
+//            SetImage("#ctl00_cphMainWrapper_ImageIcon1", "#ctl00_cphMainWrapper_ImageDrag1", "#ctl00_cphMainWrapper_txt_width1", "#ctl00_cphMainWrapper_txt_height1", "#ctl00_cphMainWrapper_txt_top1", "#ctl00_cphMainWrapper_txt_left1", "#ctl00_cphMainWrapper_txt_Zoom1", 280, 210);
+//            SetImage("#ctl00_cphMainWrapper_ImageIcon2", "#ctl00_cphMainWrapper_ImageDrag2", "#ctl00_cphMainWrapper_txt_width2", "#ctl00_cphMainWrapper_txt_height2", "#ctl00_cphMainWrapper_txt_top2", "#ctl00_cphMainWrapper_txt_left2", "#ctl00_cphMainWrapper_txt_Zoom2", 200, 150);
+//            SetImage("#ctl00_cphMainWrapper_ImageIcon3", "#ctl00_cphMainWrapper_ImageDrag3", "#ctl00_cphMainWrapper_txt_width3", "#ctl00_cphMainWrapper_txt_height3", "#ctl00_cphMainWrapper_txt_top3", "#ctl00_cphMainWrapper_txt_left3", "#ctl00_cphMainWrapper_txt_Zoom3", 140, 105);
+//            SetImage("#ctl00_cphMainWrapper_ImageIcon4", "#ctl00_cphMainWrapper_ImageDrag4", "#ctl00_cphMainWrapper_txt_width4", "#ctl00_cphMainWrapper_txt_height4", "#ctl00_cphMainWrapper_txt_top4", "#ctl00_cphMainWrapper_txt_left4", "#ctl00_cphMainWrapper_txt_Zoom4", 105, 80);
+//        }
+
+        function InitDiscoverAutocomplete() {
+            $("input#ctl00_cphMainWrapper_txtDiscoverAutoComplete").autocomplete({
+                source: "../Handlers/LocationAutocomplete.ashx",
+                autoFill: true
+            });
+        }
+    </script>
+    <style type="text/css">
+        .project-pledged-wrap{-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;width:200px;height:8px;background:#ddd;padding:0;margin-top:5px;margin-bottom:6px}
+        .project-pledged{background:#87c442;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;height:8px}
+        .project-stats{margin:0;padding:0;border:0;outline:0;overflow:hidden;*zoom:1;font-size:10px;text-transform:uppercase;position:absolute;color:#999}
+
+        .first{overflow:hidden;*zoom:1;border-left:0}
+        .num{font-size:48px;line-height:47px}
+        .last{margin-right:0}
+        /**************7.26添加信封小图标*******************/
+        /*
+        .menu { position:relative; }
+        .msgtip { width:180px; height:24px; position:absolute; right:-10px; top:-22px; z-index:-1; }
+        a.msgbg { width:56px; height:24px; text-align:center; display:inline-block; margin-right:15px; }
+        a.msgbg img.img { _height:24px; _overflow:hidden; _top:-1px; _position:relative; }
+        img.newmsg { position:absolute; top:2px; left:2px; _z-index:2; }
+        span.countmsg { position:absolute; top:-5px; left:65px; background:url(../images/msgcount.gif) no-repeat; width:30px; height:21px; line-height:21px; text-align:center; color:#fff; _z-index:2; }
+        */
+        
+        .menu { position:relative; }
+        .msgtip { width:180px; height:24px; position:absolute; right:-10px; top:-22px;}
+        .msgtip a { width:56px; height:23px; text-align:center; display:inline-block; margin-right:15px; vertical-align:middle; }
+        a.msgbg1 { background:url(../images/message.gif) no-repeat; }
+        a.msgbg2 { background:url(../images/earth.gif) no-repeat;  }
+        span.newmsg { position:absolute; top:-5px; left:-10px; background:url(../images/msgcount.gif) no-repeat; width:30px; height:21px; line-height:21px; text-align:center; color:#fff; _z-index:2; }
+        span.countmsg { position:absolute; top:-5px; left:65px; background:url(../images/msgcount.gif) no-repeat; width:30px; height:21px; line-height:21px; text-align:center; color:#fff; _z-index:2; }
+        
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form runat="server"  id="masterForm">
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<div class="header">
+	<div class="logo">
+    	<a href="#"><img src="../images/logo.jpg" width="297" height="87" /></a>
+    </div>
+    <div class="header_tips">
+   		什么是微天使？勿以善小而不为，简单非简单。陪着你，在这，一直都在。<a href="#" class="link_KnowMore">了解更多！</a><a href="http://weiangels.blog.163.com/blog/static/18881217720117134945290/" target="_blank"><img src="../images/top.png" align="absmiddle" width="46" height="69" /></a> 
+    </div>
+    <div> 
+		<div id="KnowMore" style="display:none;">
+		    <p><%=KnowMore %>
+		    </p> 
+		</div> 
+	</div> 
+	<% if(CurrentTab=="") { %>
+	   <div class="menu">
+           <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+            	    <%if (MessageCount > 0)
+                   { %>
+            	    <span class="newmsg"><%=MessageCount%></span>
+            	    <%} %>
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                   { %>
+            	    <span class="countmsg">1</span>
+            	    <%} %>
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|<a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../Account/Login.aspx?Action=MYANGELS&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=AccountSettings">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+	<%} %>
+    <% if (CurrentTab == "Index")
+       { %>
+    <div class="menu">
+           <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+            	    <%if (MessageCount > 0)
+                   { %>
+            	    <span class="newmsg"><%=MessageCount%></span>
+            	    <%} %>
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                   { %>
+            	    <span class="countmsg">1</span>
+            	    <%} %>
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li class="current"><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|<a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../Account/Login.aspx?Action=MYANGELS&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=AccountSettings">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <%}  %>
+     <% if (CurrentTab == "Discover")
+       { %>
+    <div class="menu">
+     <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+        	     <%if (MessageCount > 0)
+                { %>
+                <span class="newmsg"><%=MessageCount %></span>
+                   <%} %>
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                { %>
+                <span class="countmsg"><%=NoticeCount %></span>
+                <%} %>
+            	    
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li class="current"><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|<a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../Account/Login.aspx?Action=UserLogin&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=AccountSettings">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <%}  %>
+     <% if (CurrentTab == "Share")
+       { %>
+    <div class="menu">
+     <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+        	     <%if (MessageCount > 0)
+                { %>
+                <span class="newmsg"><%=MessageCount %></span>
+                   <%} %>
+            	      
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                { %>
+                 <span class="countmsg"><%=NoticeCount %></span>
+                <%} %>
+            	   
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li class="current"><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|<a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../Account/Login.aspx?Action=MYANGELS&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=AccountSettings">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <%}  %>
+     <% if (CurrentTab == "DoMore")
+       { %>
+    <div class="menu">
+     <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+        	     <%if (MessageCount > 0)
+                { %>
+                <span class="newmsg"><%=MessageCount %></span>
+                   <%} %>
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                { %>
+                <span class="countmsg"><%=NoticeCount %></span>
+                <%} %>
+            	    
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li class="current"><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|<a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../Account/Login.aspx?Action=MYANGELS&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=AccountSettings">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <%}  %>
+     <% if (CurrentTab == "FAQ")
+       { %>
+    <div class="menu">
+     <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+        	     <%if (MessageCount > 0)
+                { %>
+                 <span class="newmsg"><%=MessageCount %></span>
+                   <%} %>
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                { %>
+                <span class="countmsg"><%=NoticeCount %></span>
+                <%} %>
+            	    
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li class="current"><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|
+            <a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../Account/Login.aspx?Action=MYANGELS&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=AccountSettings">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <%}  %>
+    <!--我的天使和账户管理-->
+      <% if (CurrentTab == "MyAngels")
+       { %>
+    <div class="menu">
+     <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+        	     <%if (MessageCount > 0)
+                { %>
+                <span class="newmsg"><%=MessageCount %></span>
+                   <%} %>
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                { %>
+                <span class="countmsg"><%=NoticeCount %></span>
+                <%} %>
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|<a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user current"><a href="../Account/Login.aspx?Action=MYANGELS&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=AccountSettings">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user current"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <%}  %>
+    
+    <% if(CurrentTab=="UserLogin") { %>
+    <div class="menu">
+     <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+        	     <%if (MessageCount > 0)
+                { %>
+                <span class="newmsg"><%=MessageCount %></span>
+                   <%} %>
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                { %>
+                <span class="countmsg"><%=NoticeCount %></span>
+                <%} %>
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login current"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|<a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../Account/Login.aspx?Action=MYANGELS&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login current"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=AccountSettings">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <%} %>
+    
+      <% if (CurrentTab == "AccountSettings")
+       { %>
+    <div class="menu">
+     <%if (CurrentUser.IsAuthenticated)
+             { %>
+            <!--start 7.26日 加上信封小图标-->
+            <div class="msgtip">
+        	    <a href="../Account/MessageList.aspx?MainTab=MyAngels" class="msgbg1">
+        	     <%if (MessageCount > 0)
+                { %>
+                 <span class="newmsg"><%=MessageCount %></span>
+                   <%} %>
+            	   
+                </a>
+                <a href="../MyAngels/MyNoticeList.aspx?MainTab=MyAngels" class="msgbg2">
+                 <%if (NoticeCount > 0)
+                { %>
+                <span class="countmsg"><%=NoticeCount %></span>
+                   <%} %>
+            	    
+                </a>
+            </div>
+            <!--end 7.26日 加上信封小图标-->
+           <%} %>
+    	<ul>
+        	<li><a href="../home/index.aspx?MainTab=Index"><span class="menu_l" style="padding:10px 10px 0 20px;">首页</span><span class="menu_r"></span></a></li>
+			<li><a href="../discover/index.aspx?MainTab=Discover"><span class="menu_l">发现<code>英雄之旅</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Project/ShareProject.aspx?MainTab=Share"><span class="menu_l">创新<code>偶然之戒</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/DoingMore.aspx?MainTab=DoMore"><span class="menu_l">持续<code>做更多</code></span><span class="menu_r"></span></a></li>
+			<li><a href="../Home/FAQ.aspx?MainTab=FAQ"><span class="menu_l">常见问题</span><span class="menu_r"></span></a></li>
+            <%if (!CurrentUser.IsAuthenticated)
+            {%>
+            <li class="user_login current"><span class="user_l"><a class="menulink_login" href="../Account/Login.aspx?MainTab=UserLogin">登录</a>|<a class="menulink_regist" href="../Account/Login.aspx?MainTab=UserLogin" style="color:#fff;">赶快加入</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../Account/Login.aspx?Action=MYANGELS&MainTab=UserLogin"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}else { %>
+            <li class="user_login current"><span class="user_l"><a class="menulink_login" href="../account/settings.aspx?MainTab=MyAngels">账户管理</a>|<a class="menulink_regist" href="javascript:void(0)" onclick="logout()" style="color:#406718;">退出</a></span><span class="user_r"></span></a></li>
+			<li class="user"><a href="../myangels/index.aspx?adr=<%=CurrentUser.HomepageAddress %>&MainTab=MyAngels"><span class="user_l">我的天使</span><span class="user_r"></span></a></li>
+            <%}%>
+        </ul>
+    </div>
+    <%}  %>
+</div>
+<!--Header End-->
+<!--Main Begin-->
+<div class="main">
+	<asp:ContentPlaceHolder ID="cphMainWrapper" runat="server">
+    </asp:ContentPlaceHolder>
+</div>
+
+<!--Main End-->
+<!--Footer Begin-->
+<div class="footer">
+	<div class="footer_top">
+    	<div class="footer_class">
+        	<h5>浏览项目类别</h5>
+            <p></p>
+            <ul>
+            	<li><a href="../Discover/FCategory.aspx?CategoryID=1&MainTab=Discover">互联网</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=2&MainTab=Discover">移动应用</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=3&MainTab=Discover">艺术</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=4&MainTab=Discover">设计</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=5&MainTab=Discover">漫画</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=6&MainTab=Discover">舞蹈</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=7&MainTab=Discover">食品</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=8&MainTab=Discover">时尚</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=9&MainTab=Discover">电影及短片</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=10&MainTab=Discover">游戏</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=11&MainTab=Discover">音乐</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=12&MainTab=Discover">摄影</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=13&MainTab=Discover">科学技术</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=14&MainTab=Discover">剧场演出</a></li>
+                <li><a href="../Discover/FCategory.aspx?CategoryID=15&MainTab=Discover">写作与出版</a></li>
+            </ul>
+        </div>
+        <div> 
+		<div style="display:none;" id="divFamilyValuesDetail">
+		    <p><%=Home_Index_Family_Values_Detail%>
+		    </p> 
+		</div> 
+	</div>
+        <div class="footer_sms">
+        	<h5>微天使每周通讯</h5>
+            <p></p>
+                <%--<asp:TextBox runat="server" ID="txtADEmail" CssClass="email_input input_text_bg" Text="您的电子邮件地址..."></asp:TextBox>
+                <asp:Button runat="server" ID="btnSubscribeAD" Text="" 
+                CssClass="email_button" onclick="btnSubscribeAD_Click" />--%>
+            	<input type="text" value="您的电子邮件地址..." class="email_input input_text_bg">
+                <input type="button" value=" " class="email_button">
+            
+            <p></p>
+            <p></p>
+            <h5 style="color:#789c21;">微天使家庭价值观:</h5>
+            <p><%=Home_Index_Family_Values %></p>
+            <p></p>
+            <h5 style="color:#55a4f2;"><a class="link_value" href="#TB_inline?height=155&amp;width=300&amp;inlineId=divFamilyValuesDetail&amp;modal=false">什么是我们对于家庭的理解？</a></h5>
+            <div class="dialog_email">
+                <div class="close">X</div>
+                <div class="dialog_email_body">
+                    <div class="dialog_email_title">成功</div>
+                    <div class="dialog_email_mes">你订阅了我们的周报通讯在<br /><label>#电子邮件#</label></div>
+                </div>
+            </div>
+            <div class="dialog_email_error">
+                <div class="dialog_email_body">
+                    <div class="dialog_email_title">错误</div>
+                    <div class="dialog_email_mes">您的邮箱格式有误，请验证</div>
+                </div>
+            </div>
+        </div>
+   	  <div class="footer_tweet weiangelsLink">
+   			<h5>微天使链接</h5>
+				<a class="link link_weibo" href="http://weibo.com/weiangels">关注我们的微博</a>
+				<a class="link link_blog" href="http://weiangels.blog.163.com">订阅我们的博客</a>
+				<a class="link link_team" href="../Home/OurTeam.aspx">认识我们的团队</a>
+				<a class="link_wework link link_us" href="#">与我们一起工作</a>
+				<div style="display:none;" id="divWorkWithUS">
+					<p><%=Base_WorkWithUS %></p> 
+		    </div> 
+		</div>
+    </div>
+    <div class="footer_bottom">
+		<div style="float:left; display:inline;" >
+    	<a href="../Home/FAQ.aspx">常见问题/帮助</a>  |  <a href="../Home/ProjectGuidesANDRules.aspx">项目指南</a>  |  <a href="../Home/TermsOfUse.aspx">使用条款</a>  |  <a href="../Home/PrivacyPolicy.aspx">隐私权政策</a>  |  <a href="../Home/FAQ.aspx">联系我们</a>  |  <a href="../Home/FAQ.aspx?MainTab=FAQ#detail102">什么是微认证</a>
+    	<img height="31" style="margin-left: 60px;" align="absbottom" width="27" src="../images/s.png"></div>
+        <b>Love you,that's all I ask of you.  | &copy; 2011 WeiAngels.org</b>
+    </div>
+</div>
+<!--Fo0ter End-->
+
+
+</form>
+
+
+<div class="dialog_workwith">
+	<div class="workwithhead">
+		<div class="workwith_title">什么是微天使？</div>
+		<div class="close">X</div>
+	</div>
+	<div class="workwithbody">
+	    <p><b>微天使是一个创意项目的资金平台。</b>每月有超过百万人访问微天使并发现伟大的项目,我们称之为发现英雄之旅。我们乐于接受来自<font color="f25555">艺术界</font>，<font color="f9b85f">舞蹈界</font>，<font color="e7d05a">电影界</font>，<font color="b3c441">音乐界</font>，<font color="55a4f2">摄影界</font>，<font color="6954d1">出版界</font>和<font color="c252cc">戏剧界</font>的创造性艺术项目，以及来自<font color="033c73">互联网</font>、<font color="c252cc">移动</font>、<font color="6954d1">科技</font>、<font color="55a4f2">饮食</font>、<font color="b3c441">设计</font>、<font color="ebd650">时尚</font>、<font color="f4a355">游戏</font>、<font color="f97755">漫画</font>和<font color="ff00ff">新闻</font>等领域的多元化创造性项目。</p>
+	    <p><b>一种全新的商业赞助模式。</b>让项目创建者拥有100%的所有权和控制权，同时他们提供的产品和经验都是独特而有趣的。这里禁止提供经济诱因，如所有权，任何财政回报（利润分享）或偿还贷款。</p>
+	    <p><b>全有或全无。</b>在微天使上，一个项目的筹资必须在结束期前达到筹资目标，否则没有任何资金上的资助。不存在部分资助，只有成功或不成功。为什么这么说？因为它涉及所有参与者的利益。这样一来，谁也不可能会在没有足够预算的前提下去发展一个项目。同时允许用大众的眼光来测试项目的风险性。</p>
+	    <p><b>每一个项目都是独立创作的，就像你这样的人。</b>微天使不在乎大或小，严肃或幽默，实验或传统。只要它是有启发性，娱乐性和令人难以置信的多样性。我们欢迎你来微天使。</p>
+	    <p><b style="color:#55a4f2">非常感谢！Always</b></p>
+	</div>
+	<div class="workwithfoot">
+	</div>
+</div>
+
+
+<div class="dialog_value">
+	<div class="valuehead">
+		<div class="value_title">微天使价值观</div>
+		<div class="close">X</div>
+	</div>
+	<div class="valuebody">
+	    <p><b>饭一定要吃好！</b><br />一位老奶奶曾对家里人这样说：“对于人来说，冷静是很重要的。家里人不管什么时候回来，一会肚子饿。家中田里的青菜、葡萄、茄子，让回家的人吃个够。家庭就是都不要放开彼此的手，不要输给人生。即使有痛苦的时候，也要和平常一样一家人坐在一起吃饭，一定不能饿着肚子，一定不要独自一人。因为有你们，我非常幸福”</p>
+	    <p><b>少花钱，多办事。</b><br />我们相信，所做的一切都有可再改善的余地。我们不想理所应当的去参照一些行业标准。我们相信通过努力和额外的付出将会使我们更为卓越。我们需要不断的创新，改进我们的业务，努力使自己更有效率，不断尝试找出如何做的更好又省钱的方法。我并不知道对面是什么，但我知道你会在我身边。 </p>
+	    <p><b>有趣+一点古怪</b><br />我们不想成为那些枯燥的组织。我们甚至可以自我嘲讽，我们期待日常的工作中既有趣又幽默。这意味我们要做的事情很多，可能有点标新立异——否则不会只是一点的古怪。我们不是极端疯狂，我们只是想让生活变得更有乐趣。在这里你会发现有一个独特而难忘的组织。我们拥抱多样性和每个人的个性。我们希望人们在他们的工作中表达自己的个性。从条条框框中冲破出来发现更多的创新。</p>
+	    <p><b>冒险，创新，开明</b><br />我们不希望人们害怕承担风险和犯错误。我们相信，如果人不犯错误，那就意味着他永远不会成功。我们希望人们培养和提高他们的决策能力。我们鼓励人们坦诚的面对错误，因为只有自己向自己学习才可能迈出非凡的一步。我们从来不想接受自满的现状，我们应该始终寻求冒险和乐趣，探索新的可能性。Thanks for the adventures.Now have a new one.</p>
+	    <p><b>充满激情和决心</b><br />你可以看到你的工作正在日复一日的产生巨大的影响。为每个人努力创造一个拥有梦想的家，你难道会不兴奋吗？有传染性的热情和决心会对我们所做的每一件事产生积极的作用。让你的激情再次燃烧，无论你是50后，60后，70后还是80后。燃烧吧！我的小宇宙……</p>
+	</div>
+	<div class="valuefoot">
+	</div>
+</div>
+
+
+<div class="dialog_wework">
+	<div class="weworkhead">
+		<div class="wework_title">与我们一起工作</div>
+		<div class="close">X</div>
+	</div>
+	<div class="weworkbody">
+	    <p><b>如何获得在微天使工作的机会？</b><br />与其他公司一样，我们不定期提供一些空缺岗位的招聘。但我们的工作岗位是有严格的名额限制（一个坑只能放一个萝卜），只有人员离职才会出现岗位空缺，因为有关创新的事情总是会吸引太多的人一窥究竟。</p>
+	    <p>太多人说“老兄，你在WAO工作！ OMG，我爱死你们了……”，然后和我们拥抱。如果是女孩还会……（呵呵，不多说，你懂的）。</p>
+	    <p>微天使中的每个用户都在与我们一起创造梦想，他们就是最棒的创造者，是我们不可或缺的一员！在这里你可以查看空缺的岗位信息，或者发送邮件告知您的简历和期待的职位描述。如果我们认为您是合适的人选，将欢迎您加入我们的团队。</p>
+	    <p>工作可以等，但天气不能等。没人知道美景何时会来，所以只要好景来临时，就去感受它吧！这是大自然带给你的惊喜，这是一份具有魔法般的礼物，这就是我们所理解并倡导的工作与生活的关系。下雨了就去趟水，下雪就去吃火锅，下雾了就去玩捉迷藏，阴天了就泡茶聊聊天吧！你要问我们什么时候工作，我们一直都在做喜欢的事情。我们提供兼职和专职两种类型的岗位，主要是涉及的职位有设计和编辑。</p>
+	    <p><b>设计职位•技能</b><br />
+	    通过平面设和排版可以有效地将思想转为视觉<br />
+	    熟知网格布局，平面设计和网页排版的<br />
+	    深刻理解当前HTML / CSS最佳做法和Web标<br />
+	    准熟悉的960网格的框架</p>
+	    <p><b>编辑职位•要求</b><br />
+	    阅读并善于判断和搜索<br />
+	    具备微天使某一项目领域的相应知识<br />
+	    具备基本的中文编写能力。<br />
+	    如果你有兴趣可以访问以下网址获得更多最新的信息:</p>
+	    <p>
+	    <a href="http://weiangels.blog.163.com/blog/static/18881217720117134945290/" target="_blank">我们就是改变的本身-加入我们</a></p>
+	   </div>
+	<div class="weworkfoot">
+	</div>
+</div>
+<div class="dialog_login">
+    <div class="login_head"></div>
+    <div class="login_content">
+        <p class="login_title">您已经登录成功</p>
+        <p class="login_reset" id="resettbox"><em>1</em>秒后自动跳转到页面，或者点击<a href="#">这里</a>直接跳转。</p>
+    </div>
+</div>
+<div class="dialog_logout">
+    <div class="logout_head"><div class="close">X</div></div>
+    <div class="logout_content">
+        <p class="logout_title">提示</p>
+        <p class="logout_reset">您已经成功退出了</p>
+    </div>
+</div>
+<div class="dialog_login_error">
+    <div class="login_error_head"><div class="close">X</div></div>
+    <div class="login_error_content">
+        <p class="login_error_title">错误</p>
+        <p class="login_error_reset">电子邮件登录名或密码不正确</p>
+    </div>
+</div>
+</body>
+</html>

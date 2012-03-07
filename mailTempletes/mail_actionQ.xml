@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templete>
+
+	<discription>用户提交项目申请</discription>
+	
+    <!--邮件中显示的发送人地址，非实际地址-->
+    <sendEmailAddress>no-reply@weiangels.org</sendEmailAddress>
+	
+    <!--邮件中显示的发送人名称，非实际名称-->
+    <sendUserName>微天使</sendUserName>
+	
+	<!--邮件是否为Html格式-->
+	<isBodyHtml>true</isBodyHtml>
+	
+	<!--邮件主题-->
+    <subject>
+        <![CDATA[
+        您已经成功的提交了项目
+        ]]>
+    </subject>
+	
+	<!--邮件内容-->
+    <content>
+        <![CDATA[
+			<p>我们承诺，我们会尽快审核您的项目。当我们回复时，您会再次收到通知。请不要担心错过什么。</p>
+			<p>项目审核阶段无法编辑。</p>
+			<br />
+			<p>感谢您的提交</p>
+			<p>微天使</p>
+        ]]>
+    </content>
+    
+    <!--模板附件，填写附件的物理地址，每个附件对应一个attachment节点-->
+	<!--
+    <attachments>
+        <attachment fileName="d:/attachement/testdoc.doc"/>
+    </attachments>
+	-->
+</templete>

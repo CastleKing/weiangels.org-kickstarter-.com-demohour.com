@@ -1,0 +1,3 @@
+﻿<%@ control language="C#" autoeventwireup="true" inherits="AccountingApplication_UserControls_ProjectMoney, App_Web_projectmoney.ascx.3a658e17" %>
+ 您可用于提款的金额：<b class="money">￥<asp:Label runat="server" ID="lblWITHDRAWBALANCE"></asp:Label></b>  | 冻结金额：<b class="money">￥<asp:Label runat="server" ID="lblBlockedBack"></asp:Label></b>  | 
+提款累积金额：<b class="money">￥<asp:Label runat="server" ID="lblTOTALWITHDRAW"></asp:Label></b>  | 成功筹集总额：<b class="money">￥<asp:Label runat="server" ID="lblTotalSucceed"></asp:Label></b>

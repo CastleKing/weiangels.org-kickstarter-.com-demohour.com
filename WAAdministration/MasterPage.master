@@ -1,0 +1,42 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_masterpage.master.cdcab7d2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width:85%">
+            <div  style="float:left; width:75%;">
+                <asp:SiteMapDataSource ID="smDataSource" runat="server" />
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="smDataSource" 
+                     Orientation="Horizontal"  StaticDisplayLevels="2" DynamicPopOutImageUrl="~/Images/right-arrow.gif" 
+                     StaticPopOutImageUrl="~/Images/drop-arrow.gif" SkinID="SMenu">
+                </asp:Menu>
+            </div>
+            <div style="float:right;">
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <LoggedInTemplate>
+                      <asp:LoginName ID="LoginName1" runat="server"/>
+                      <a href="../Common/ChangePassword.aspx">修改密码</a>
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" SkinID="SampleLoginStatus" LogoutAction="Redirect" />
+                    </LoggedInTemplate>
+                    <AnonymousTemplate>
+                        
+                    </AnonymousTemplate>
+               </asp:LoginView>
+            </div>
+        </div>
+        <div>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templete>
+	<discription>用户提交提议申请</discription>
+	
+    <!--邮件中显示的发送人地址，非实际地址-->
+    <sendEmailAddress>no-reply@weiangels.org</sendEmailAddress>
+	
+    <!--邮件中显示的发送人名称，非实际名称-->
+    <sendUserName>微天使</sendUserName>
+	
+	<!--邮件是否为Html格式-->
+	<isBodyHtml>true</isBodyHtml>
+	
+	<!--邮件主题-->
+    <subject>
+        <![CDATA[
+        感谢你向微天使提交梦想
+        ]]>
+    </subject>
+	
+	<!--邮件内容-->
+    <content>
+        <![CDATA[
+		我们承诺，我们会尽快回复您的提议。当我们回复时，您会再次受到通知。请不要担心错过什么！<br />
+		您还可以通过以下地址查看您所提交的信息和我们的回复：<br />
+		<a href="http://localhost/WeiAngels/account/message.aspx?proposal=${proposalId}">
+			http://localhost/WeiAngels/account/message.aspx?proposal=${proposalId}
+		</a>
+        ]]>
+    </content>
+    
+    <!--模板附件，填写附件的物理地址，每个附件对应一个attachment节点-->
+	<!--
+    <attachments>
+        <attachment fileName="d:/attachement/testdoc.doc"/>
+    </attachments>
+	-->
+</templete>

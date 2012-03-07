@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+.main { width:980px; height:auto; margin:-1px auto 50px auto; background:url(../images/main_bottom.png) no-repeat bottom center; }
+.mainbody { background:#fff; border-left:1px solid #c1e2e9; border-right:1px solid #c1e2e9; height:auto; overflow:hidden; }
+.mainbottom { height:40px; }
+.info { background:#29758f; padding:20px; }
+.more_info { width:980px; margin:0 auto; font-size:23px; color:#fff; font-weight:bold; }
+
+.mainleft { width:570px; height:auto; float:left; padding:20px 0 20px 20px; }
+b.help_class_title { font-size:15px; }
+b.help_class_title2 { font-size:18px; display:block; background:#f9f9f2; border-bottom:1px solid #e8e7dd; border-right:1px solid #e8e7dd; padding:10px 20px; color: #EF4823; }
+.help_desc { margin-top:50px; }
+.help_desc_item { font-size:13px; padding:20px; text-align:justify; text-justify:inter-ideograph;}
+.help_desc_item p {margin-bottom:15px; text-align: justify; text-justify:inter-ideograph;}
+.help_desc_item p b {background:#ff0;}
+.help_desc_item ul {padding-left:15px; margin-bottom: 20px;}
+.help_desc_item ul li {list-style:disc; color:#4f81bd;}
+.help_desc_item ul li p {color:#333; margin: 0;}
+a.top_link { font-size:13px; margin-left:20px; }
+ul.help_list { padding:0; margin:0; }
+ul.help_list li { font-size:13px; margin:10px 0; }
+
+.mainright { width:370px; height:auto; float:right; padding-top:20px; position:relative; }
+.hero { width:337px; height:200px; background:url(../images/hero_bg.png) no-repeat; }
+.hero_title { font-size:19px; font-weight:bold; color:#fff; position:relative; top:27px; padding:20px; left:10px; }
+.hero_desc { font-size:13px; position:relative; bottom:-10px; padding:25px 41px 25px 25px; /*line-height:15px;*/ }
+
+.contact_us {  border-top:1px solid #333; margin-top:50px; padding:20px 0 20px 20px; width:320px; }
+.contact_us .img { float:left; margin-right:20px; height:200px; }
+.contact_us p {/* float:left; */line-height:20px; }
+
+.blog { width:300px; margin-top:50px; padding:20px; border-top:1px solid #333; }
+.blog img { float:left; margin-right:10px; position:relative; top:-50px; }
+.blog p { float:left; line-height:20px; }
+
+.dialog_help { display: none; position: fixed; z-index:999; top:0px; left:200px; text-align:left; border:10px solid #999; border-radius:8px; width:670px; background:#FFF; }
+/*兼容IE6浮动*/
+*html .dialog_help { position:absolute; top:expression(eval(document.documentElement.scrollTop + (document.documentElement.clientHeight - this.clientHeight) / 2));
+ left:expression(eval(document.documentElement.scrollLeft + (document.documentElement.clientWidth - this.clientWidth) / 2));
+}
+.help_head { background-color: #E8E8E8; height:52px; font-size:14px; font-weight:bold; line-height:52px; }
+.help_title { float:left; display:inline; text-indent:1em; }
+.help_head .close { float:right; display:inline; margin-right:17px; cursor:pointer; color: #999999; }
+.help_content { font-weight:bold; padding:20px 15px; position:relative; }
+.help_content p {margin-bottom:15px;}
+.help_content p.left {float:left; display:inline; width:310px;}
+.help_content p.left .text {width:90%;}
+.help_content p.right {float:right; display:inline; width:310px;}
+.help_content p.right .text {width:96%;}
+.help_content .text { padding:5px; width:98%;}
+.help_content label {display:block; margin-bottom:5px;}
+.help_input { background: #e3f1fe; padding: 20px;}
+.help_button {border:none; border-radius:5px; background:#55a4f1; color:#FFF; width:100px; height:30px; line-height:30px; font-weight:bold; cursor:pointer; vertical-align:middle; margin-right:10px;}
+.help_button:hover {background:#0099ff;} 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templete>
+	<discription>支持者取消承诺</discription>
+	
+    <!--邮件中显示的发送人地址，非实际地址-->
+    <sendEmailAddress>no-reply@weiangels.org</sendEmailAddress>
+	
+    <!--邮件中显示的发送人名称，非实际名称-->
+    <sendUserName>微天使</sendUserName>
+	
+	<!--邮件是否为Html格式-->
+	<isBodyHtml>true</isBodyHtml>
+	
+	<!--邮件主题-->
+    <subject>
+        <![CDATA[
+        您已取消您对${projectName}的承诺资助
+        ]]>
+    </subject>
+	
+	<!--邮件内容-->
+    <content>
+        <![CDATA[
+		${prjUserName}说：<br />
+		<p>${msgContent}</p>
+		回复此信息，请点击下面的链接：<br />
+		<a href="http://localhost/WeiAngels/account/message.aspx?prj=${projectId}&category=FrontToFront">
+			http://localhost/WeiAngels/account/message.aspx?prj=${projectId}&category=FrontToFront
+		</a>
+		<p>
+			您对${prjUserName}创建的${projectName}项目进行了承诺取消，取消金额为￥${amount}元。<br />
+			同时取消的奖励是：${rewardInfo}
+		</p>
+        ]]>
+    </content>
+    
+    <!--模板附件，填写附件的物理地址，每个附件对应一个attachment节点-->
+	<!--
+    <attachments>
+        <attachment fileName="d:/attachement/testdoc.doc"/>
+    </attachments>
+	-->
+</templete>

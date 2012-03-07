@@ -1,0 +1,48 @@
+<asp:GridView runat="server"/>
+<asp:GridView runat="server" SkinID="mocha"
+	BackColor="White"
+	BorderColor="#DEDFDE"
+	BorderStyle="None" Font-Names="Verdana"
+	BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical"
+	EmptyDataRowStyle-BackColor="#F7F7DE" EmptyDataRowStyle-Font-Bold="True" EmptyDataRowStyle-ForeColor="White">
+	<FooterStyle BackColor="#B5C7DE" Font-Names="Verdana" Font-Bold="True" ForeColor="White" />
+	<RowStyle BackColor="#EFF3FB" Font-Names="Verdana" />
+	<EditRowStyle BackColor="#2461BF" />
+	<SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+	<PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+	<HeaderStyle BackColor="#B5C7DE" Font-Bold="True" ForeColor="#284E98" />
+	<AlternatingRowStyle BackColor="White" />
+</asp:GridView>
+<asp:GridView runat="server" SkinID="Snow"
+	BackColor="White"
+	BorderColor="#E7E7FF"
+	BorderStyle="None"
+	BorderWidth="1px"
+	CellPadding="3"
+	GridLines="Horizontal">
+	<FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+	<RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
+	<SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
+	<PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
+	<HeaderStyle BackColor="#4A3C8C" Font-Bold="false" ForeColor="#F7F7F7" Font-Size="10pt" HorizontalAlign="Left" />
+	<AlternatingRowStyle BackColor="#F7F7F7" />
+</asp:GridView>
+
+ <asp:Menu runat="server" 
+								          SkinID="SMenu"
+								            BackColor="#B5C7DE"
+								            DynamicHorizontalOffset="2"
+								            Font-Names="Verdana"
+								            Font-Size="0.8em"
+								            ForeColor="#284E98"
+								            Orientation="Horizontal"
+								            StaticDisplayLevels="2"
+								            StaticSubMenuIndent="10px" Font-Bold="True" >
+								            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+								            <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+								            <DynamicMenuStyle BackColor="#B5C7DE" />
+								            <StaticSelectedStyle BackColor="#507CD1" />
+								            <DynamicSelectedStyle BackColor="#507CD1" />
+								            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+								            <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+							            </asp:Menu>

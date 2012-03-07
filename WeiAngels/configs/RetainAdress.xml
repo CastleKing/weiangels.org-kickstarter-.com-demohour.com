@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<addresses>
+    <add word="bin"/>
+    <add word="configs"/>
+    <add word="css"/>
+    <add word="discover"/>
+    <add word="home"/>
+    <add word="iepngfix"/>
+    <add word="images"/>
+    <add word="js"/>
+    <add word="masterpages"/>
+    <add word="myangels"/>
+    <add word="tinymce"/>
+</addresses>

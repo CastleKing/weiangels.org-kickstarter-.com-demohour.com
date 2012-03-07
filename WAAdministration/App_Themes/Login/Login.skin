@@ -1,0 +1,10 @@
+﻿<asp:Login runat="server" SkinID="login"
+							                BackColor="#637c9b" BorderColor="#E6E2D8" BorderPadding="4"
+								            BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em"
+								            ForeColor="#333333" TextLayout="TextOnTop" Width="311px">
+								            <TitleTextStyle BackColor="#1C5E55" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+								            <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+								            <TextBoxStyle Font-Size="0.8em" />
+								            <LoginButtonStyle BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid" BorderWidth="1px"
+									            Font-Names="Verdana" Font-Size="0.8em" ForeColor="#1C5E55" />
+							            </asp:Login>

@@ -1,0 +1,59 @@
+@charset "utf-8";
+/***MainBody***/
+.main { height:auto; margin:-1px auto 0 auto; padding-bottom:50px; background:#343434; }
+.info { height:80px; background:#29758f; padding-top:23px; }
+.hero_info { width:980px; margin:0 auto; font-size:19px; font-weight:bold; text-align:center; color:#fff; }
+.hero_info p { font-size:16px; margin-top:10px; }
+.mainbody { height:auto; margin:0 auto; background:#e6e6e6; clear:both; overflow:hidden; padding-bottom:20px; }
+.mainbodycontent { width:980px; margin:20px auto; padding-right:40px; _margin:0 auto; _padding-top:20px; }
+.crative_info { width:505px; padding:0 60px 0 40px; float:left; line-height:30px; border-right:1px solid #fff; }
+.crative_info h2 { font-size:15px; line-height:20px; margin-top:0px; color:#69864B; }
+p.i { font-size:13px; color:#666; font-weight:bold; margin:20px 0; line-height:18px; text-align:justify; text-justify:inter-ideograph; }
+p.g { font-size:13px; font-weight:bold; color:#69864b; margin:5px 0; line-height:20px; }
+a.ok_share { width:260px; height:50px; background:url(../images/button1.gif) no-repeat; display:block; text-align:center; color:#fff; font-weight:bold; line-height:50px; font-size:15px; }
+a.ok_share:hover {background:url(../images/button1.gif) 0 -55px no-repeat;}
+a.ok_share_disabled {width:260px; height:50px; background:url(../images/button1.gif) 0 -110px no-repeat; display:block; text-align:center; color:#fff; font-weight:bold; line-height:50px; font-size:15px;}
+p.h { font-size:12px; color:#666; font-weight:bold; margin:31px 0 0 -5px; }
+.project_comand { width:340px; padding-left:30px; float:left; position:relative; }
+.project_comand li {display:none;}
+.flash { width:340px; height:255px; background:#292929; }
+.playbar { position:absolute; left:50px; top:220px; display:none; }
+.playbar a { width:20px; height:18px; display:inline; float:left; background:url(../images/icon-sprite.png) no-repeat; }
+.playbar a.prev_play { background-position: -100px -290px;}
+.playbar a.prev_play:hover { background-position: -120px -290px;}
+.playbar a.play_play { background-position: -180px -290px;}
+.playbar a.play_play:hover { background-position: -200px -290px;}
+.playbar a.stop_play { background-position: -220px -290px;}
+.playbar a.stop_play:hover { background-position: -240px -290px;}
+.playbar a.next_play { background-position: -140px -290px;}
+.playbar a.next_play:hover { background-position: -160px -290px;}
+
+.project_comand p { font-weight:bold; color:#666; line-height:25px; }
+.project_comand p a { color:#87c442; font-weight:bold; margin-right:5px; }
+.comany_list { background:#fff; }
+.comany_middle { width:980px; margin:0 auto; height:auto; overflow:hidden; }
+.comany_middle h2 { font-size:18px; padding-top:20px; border-bottom:1px solid #ccc; }
+.more { float:right; font-size:12px; font-weight:normal; }
+.comany_item { width:202px; height:272px; float:left; padding:10px 10px 0 10px; background:url(../images/comany_bg.gif) no-repeat; margin:20px 0; }
+.comany_avatar { width:202px; height:202px; background:#333; }
+.company_item { width:202px; height:262px; padding:10px; background:url(../images/comany_item_bg.gif) no-repeat; float:left; margin:20px 50px; }
+.company_avatar { width:202px; height:202px; background:#333; }
+.hero_title2 { font-size:16px; color:#999; margin:20px 0; display:block; }
+.company_avarta_bg { width:687px; height:410px; background:url(../images/comany_bg2.gif) no-repeat; margin:20px 0 20px 20px; }
+.comment_avatar { width:640px; height:360px; background:#333; }
+.how { background:#343434; height:auto; }
+.how h2 { font-size:18px; padding:40px 0 10px 5px; border-bottom:3px solid #666; }
+.how_content { width:980px; margin:0 auto; height:auto; overflow:hidden; color:#fff; }
+.how_content .grid { width:326px; height:500px; float:left; }
+.faq-column-1, .faq-column-2, .faq-column-3	{ display:inline; float:left; width:300px; margin-top:22px;}
+.faq-column-2 {margin-left:40px;}
+.faq-column-3 {margin-left:40px;}
+.how_content .quote { margin-bottom:30px;}
+.how_content .quote blockquote { font-size:19px; font-style:italic; line-height:30px;}
+.how_content dl.faq {font-size:14px; /*font-weight:bold;letter-spacing: 2px;*/ line-height:20px; margin-bottom:30px; padding-right:20; padding: 0 5px; text-align:justify; text-justify:inter-ideograph;}
+.how_content dl.faq dt.how_title {font-size:18px; margin-bottom:10px; font-weight:bold;}
+.how_content dl.faq dt.how_tip {font-size:15px; line-height:24px; font-weight:bold; /*letter-spacing:1px;*/}
+.how_content dl.faq dt { color:#fff;}
+.how_content dl.faq dd { margin-bottom:10px; color:#999;}
+/*Footer*/
+.footer { height:309px; margin:0 auto; background:#343434 url(../images/footer_bg2.gif) repeat-x; }

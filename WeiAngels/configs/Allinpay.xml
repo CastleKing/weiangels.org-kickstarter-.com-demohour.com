@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<allinpay>
+    <gateway>
+		https://service.allinpay.com/gateway/index.do
+	</gateway>
+    <sysParameters>
+        <key>1234567890</key>
+        <version>v1.0</version>
+        <language>1</language>
+        <inputCharset>1</inputCharset>
+        <merchantId>109045511108014</merchantId>
+        <pickupUrl>http://weiangels.org/account/receive.aspx</pickupUrl>
+        <receiveUrl>http://weiangels.org/account/receive.aspx</receiveUrl>
+        <signType>1</signType>
+    </sysParameters>
+    <issusers>
+        <issuser name="招商银行" issuserId="cmb" logo="../images/logos/CMB_OUT.GIF"/>
+        <issuser name="工商银行" issuserId="icbc" logo="../images/logos/ICBC_OUT.gif"/>
+        <issuser name="建设银行" issuserId="ccb" logo="../images/logos/CCB_OUT.gif"/>
+        <issuser name="农业银行" issuserId="abc" logo="../images/logos/ABC_OUT.gif"/>
+        <issuser name="浦东发展银行" issuserId="spdb" logo="../images/logos/SPDB_OUT.gif"/>
+        <issuser name="光大银行" issuserId="ceb" logo="../images/logos/CEB_OUT.gif"/>
+        <issuser name="交通银行" issuserId="comm" logo="../images/logos/COMM_OUT.gif"/>
+        <issuser name="中国银行" issuserId="boc" logo="../images/logos/BOC_OUT.gif"/>
+        <issuser name="上海银行" issuserId="bos" logo="../images/logos/SHBANK_OUT.gif"/>
+        <issuser name="平安银行" issuserId="pingan" logo="../images/logos/SPABANK_OUT.gif"/>
+        <issuser name="中信银行" issuserId="citic" logo="../images/logos/CITIC_OUT.gif"/>
+        <issuser name="华夏银行" issuserId="hxb" logo="../images/logos/hxyh.jpg"/>
+        <issuser name="兴业银行" issuserId="cib" logo="../images/logos/CIB_OUT.gif"/>
+        <issuser name="民生银行" issuserId="cmbc" logo="../images/logos/CMBC_OUT.gif"/>
+        <issuser name="邮政储蓄" issuserId="psbc" logo="../images/logos/yzcx.jpg"/>
+		<!--<issuser name="虚拟银行" issuserId="vbank" logo=""/>-->
+    </issusers>
+</allinpay>

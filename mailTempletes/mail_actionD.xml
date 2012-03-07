@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templete>
+	<discription>用户提交提议申请通过</discription>
+	
+    <!--邮件中显示的发送人地址，非实际地址-->
+    <sendEmailAddress>no-reply@weiangels.org</sendEmailAddress>
+	
+    <!--邮件中显示的发送人名称，非实际名称-->
+    <sendUserName>微天使</sendUserName>
+	
+	<!--邮件是否为Html格式-->
+	<isBodyHtml>true</isBodyHtml>
+	
+	<!--邮件主题-->
+    <subject>
+        <![CDATA[
+        感谢您成为一名支持${projectName}项目的微天使
+        ]]>
+    </subject>
+	
+	<!--邮件内容-->
+    <content>
+        <![CDATA[		
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>email</title>
+		<style type="text/css">
+			/* CSS Document */
+			body { background:#f1f1f1; font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif; }
+			.emailbody { width:427px; padding:30px; height:592px; margin:0 auto; background:url(http://localhost/weiangels/uploads/mails/emailbg.gif) no-repeat; font-weight:bold; }
+			.usermeta { height:237px; overflow:hidden; }
+			.usermeta h1 { color:#87c442; font-size:45px; margin:15px 0; }
+			a { color:#55a4f2; text-decoration:none; }
+			.usermeta p { margin:5px 0; position:relative; top:15px; }
+			p.username { font-size:12px; color:#666; margin-top:10px; }
+
+			.promissmeta { height:227px; overflow:hidden; font-size:12px; _padding-top:20px; }
+			.promissmeta p { _margin:10px 0; }
+			p.promisstitle { color:#666; }
+			span.time { background:#fcfd7b; color:#000; margin:0 5px; }
+
+			.share { height:149px; overflow:hidden; font-size:15px; }
+			p.sharetip { text-align:center; color:#333; position:relative; left:-5px; }
+		</style>
+		</head>
+
+		<body>
+		<div class="emailbody">
+			<div class="usermeta">
+				<h1>恭喜！</h1>
+				<img src="${projectImage}" width="145" height="108" style="background:#f1f1f1; float:left; margin-right:20px;" />
+				<p class="tips">您是一名微天使</p>
+				<p class="projectnamelink"><a href="#">${projectName}</a></p>
+				<p class="username">创建者${projectUserName}</p>
+			</div>
+			<div class="promissmeta">
+				<p class="promisstitle">承诺摘要</p>
+				<p>承诺金额</p>
+				<p class="promisstitle">￥${backAmount}</p>
+				<p>奖励</p>
+				<p class="promisstitle">${rewardInfo}</p>
+				<p class="promisstitle">如果这个项目成功获得资助，您的承诺金额将会在<span class="time">${dueDate}</span><br />由冻结状态变为支付状态。</p>
+			</div>
+			<div class="share">
+				<p class="sharetip">您现在成为<a href="http://www.weiangels.org/project/projectdetail.aspx?projectId=${projectId}">${projectName}</a>的官方微天使！<br />您还能帮助他们与您的朋友进行分享，以帮助他们<a href="#">更多</a>……</p>
+				<p class="sharetip">#微博分享代码#</p>
+			</div>
+		</div>
+		</body>
+		</html>
+        ]]>
+    </content>
+    
+    <!--模板附件，填写附件的物理地址，每个附件对应一个attachment节点-->
+	<!--
+    <attachments>
+        <attachment fileName="d:/attachement/testdoc.doc"/>
+    </attachments>
+	-->
+</templete>

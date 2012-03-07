@@ -1,0 +1,3 @@
+﻿<%@ control language="C#" autoeventwireup="true" inherits="AccountingApplication_UserControls_BackMoney, App_Web_backmoney.ascx.3a658e17" %>
+您可用于承诺的金额：<b class="money">￥<asp:Label runat="server" ID="lblBalance"></asp:Label></b>  | 冻结金额：<b class="money">￥<asp:Label runat="server" ID="lblBlockedBalances"></asp:Label></b>  | 
+成功累积资助金额：<b class="money">￥<asp:Label runat="server" ID="lblTotalSuccessBack"></asp:Label></b>  | 退回金额：<b class="money">￥<asp:Label runat="server" ID="lblTotalPersonalReturn"></asp:Label></b>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+.main { height:auto; margin:-1px auto 0 auto; _margin:1px auto 0 auto; padding-bottom:200px; background:#fff; overflow:hidden; }
+b.money { color:#588427; }
+.personal_info { width:980px; margin:0 auto; line-height:20px; font-size:14px; color:#666; /**padding:10px 0 0 40px!important; _padding:30px 0 0 40px;*/ }
+.personal_info h2 { font-size: 33px; overflow:hidden; line-height:33px; height:33px; }
+.personal_info_link { color:#222;}
+.personal_info_link:hover { color:#777;}
+.personal_info .title_link {color:#666;}
+.personal_info .title_link:hover {color:#333; text-decoration:underline;}
+.submenu { height:136px; *height:auto; background:#ebede1; border-bottom:1px solid #cdcdcd; padding-top:20px; _padding-top:30px; }
+.submenu_login {  background:#ebede1 url(../images/project_submenu_bg.gif) repeat-x; }
+.submenu ul { width:980px; margin:20px auto 0 auto; height:36px; }
+.submenu ul li { height:36px; line-height:36px; background:#55a4f2; margin:0 1px; float:left; display:inline-block; position:relative; top:0px; _top:1px; }
+.submenu ul li span { width:46px; _height:19px; margin-left:10px; _line-height:36px; color:#fff;background:url(../images/lmr.gif) no-repeat center center; _background:url(../images/lmr.gif) no-repeat center 7px; text-align:center; display:inline-block; }
+.submenu ul li a { height:36px; font-weight:bold; display:inline-block; line-height:36px; padding:0px 10px; color:#fff; }
+.submenu ul li.current { background:#fff; border:1px solid #cdcdcd; border-bottom:0; }
+.submenu ul li.current a { color:#55a4f2; }
+li.current2 { position:relative; top:-5px; z-index:100; }
+li.current2 a { background:url(../images/personal_tab.png) no-repeat; width:110px; height:37px; display:block; text-align:center; line-height:37px; color:#fff; font-size:16px; font-weight:bold; }
+.email_subcr_input { width:142px; height:26px; background:url(../images/email_subcr_input.png) no-repeat; border:0; line-height:26px; _margin-bottom:-1px; padding-left:5px; }
+.email_subcr_button { width:95px; height:26px; background:url(../images/email_subcr_button.png) no-repeat; border:0; }
+
+.mainbody { width:980px; margin:0 auto; height:auto; }
+.mainleft { width:980px; height:auto; float:left; }
+
+.webget_list { margin:20px 0; font-size:13px; font-weight:bold; }
+ul.webget_list li { color:#333; padding: 20px 10px; line-height:14px; border-bottom:1px dotted #cbcbcb; clear:both; }
+.webget_show { color:#95d441; width:980px; height:auto; overflow:hidden; }
+.avatar_list { margin-bottom:10px; display:block; width:560px; height:auto; overflow:hidden; }
+.avatar_list img { float:left; margin:10px 10px 0 0; background:#333; cursor:pointer; }
+.webget_left { width:257px; height:auto; overflow:hidden; float:left; border-right:1px solid #95d441; }
+.webget_right { width:702px; padding-left:20px; height:auto; overflow:hidden; float:left; }
+b.webget_b { padding:5px 0; border-bottom:1px solid #95d441; display:block; width:279px; margin-bottom:10px; float:left; }
+.webget_show_code { width:230px; height:190px; border:1px solid #666; }
+.webget_priview1 { width:222px; height:382px; float:left; background:url(../images/hero_new_project_bg.gif) no-repeat; margin:0 8px; padding-top:10px; text-align:center; font-size:12px;}
+.webget_priview1 p { margin:5px 0; text-align:justify; padding:0 35px; }
+p.webget_priview1_desc { height:120px; overflow:hidden; line-height:20px; text-align:center; }
+a.webget_priview1_addr { width:155px; height:13px; padding-left:10px; background:url(../images/addr_icon.gif) no-repeat; color:#111; font-weight:bold; }
+a.webget_priview1_addr:hover { background:url(../images/addr_icon_h.gif) no-repeat; }
+a.webget_priview1_class { width:155px; height:13px; padding-left:10px; background:url(../images/class_icon.gif) no-repeat; color:#111; font-weight:bold; }
+a.webget_priview1_class:hover { background:url(../images/class_icon_h.gif) no-repeat; }
+p.webget_priview1_meta { height:49px; padding:10px 10px 0 10px; }
+p.webget_priview1_meta b { float:left; width:67px; margin:0; _margin-top:-5px; color:#666; text-align:center; line-height:16px; }
+
+.webget_priview2 { width:672px; height:211px; padding:15px; background:url(../images/p_l_bg.gif) no-repeat; clear:both; }
+.webget_priview2_avatar { width:280px; height:210px; background:#333; float:left; }
+.webget_priview2_meta { float:left; margin-left:20px; margin-top:10px; line-height:20px; width: 370px;}
+.webget_priview2_meta b { font-size:16px; color:#55a4f2; }
+.webget_priview2_name {display:block; height:20px; overflow:hidden;}
+a.webget_priview2_addr { width:155px; height:13px; padding-left:10px; background:url(../images/addr_icon.gif) 0 2px no-repeat; color:#999; font-weight:bold; margin-right:10px; }
+a.webget_priview2_addr:hover { background:url(../images/addr_icon_h.gif) 0 2px no-repeat; color:#55a4f2; }
+a.webget_priview2_class { width:155px; height:13px; padding-left:10px; background:url(../images/class_icon.gif) 0 3px no-repeat; color:#999; font-weight:bold; }
+a.webget_priview2_class:hover { background:url(../images/class_icon_h.gif) 0 3px no-repeat; color:#55a4f2; }
+.webget_priview2_desc { height:85px; }
+.webget_priview2_process { width:201px; padding-top:10px; float:left; font-size:13px; font-weight:bold; color:#999; line-height:20px; }
+.processbar {display:block; width:200px; background:#ddd; border-radius:15px; height:8px; margin-bottom:7px;}
+.webget_priview2_support { margin-left:22px; padding-top:6px; float:left; text-align:center; font-size:13px; font-weight:bold; color:#999; line-height:20px; }
+.webget_priview2_day { margin-left:22px; padding-top:6px; float:left; font-size:13px; font-weight:bold; color:#999; line-height:20px; }
+
+.webget_priview3 { width:250px; height:76px; padding:10px; background:url(../images/priview3.gif) no-repeat; }
+.webget_priview3 img { float:left; margin-right:10px; }
+.webget_priview3 p { float:left; font-weight:bold; }
+a.webget_priview3_link { width:77px; height:26px;float:left; background:url(../images/btn.gif) no-repeat; display:block; line-height:26px; color:#fff; font-weight:bold; text-align:center; margin-top:10px; }
+
+.icon { width:200px; height:150px; float:left; }
+textarea.code { width:284px; height:110px; border:1px solid #333; }
+.picaddr { width:265px; height:28px; line-height:28px; padding:0 10px; }
+
+/*Footer*/
+.footer { height:309px; margin:0 auto; background:#fff url(../images/footer_bg2.gif) repeat-x; }

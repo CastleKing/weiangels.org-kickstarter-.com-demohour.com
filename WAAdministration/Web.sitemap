@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="" roles="*">
+      <siteMapNode url="Default.aspx" title="Home"  description=""  roles="*" />
+      <siteMapNode url="" title="User Management"  description="" roles="SystemAdmin" >
+          <siteMapNode title="Backend User Management" url="SystemAdmin/BackendUserManagement.aspx" roles="SystemAdmin"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="User anagement" roles="UserAdmin">
+        <siteMapNode title="Frontend User anagement" url="SystemAdmin/FrontendUserManagement.aspx" roles="UserAdmin"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Project Application"  description="" roles="ChiefProjectEditor" >
+        <siteMapNode  url="ProjectApplication/AuditingDetails.aspx" title="Auditing details" roles="ChiefProjectEditor"></siteMapNode>
+        <siteMapNode  url="ProjectMaintenance/IndexPageProjectManagement.aspx" title="Project Recommend Management" roles="ChiefProjectEditor"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode  title="Project Application" roles="ProjectEditor">
+        <siteMapNode  url="ProjectApplication/ProjectApplicationList.aspx" title="Project Auditing" roles="ProjectEditor"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Financial Management"  description=""  roles="Accountant">
+        <siteMapNode url="AccountingApplication/AccountingApplicationList.aspx" title ="Accounting Applications" roles="Accountant"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Page Maintenance"  description=""  roles="PageEditor">
+        <siteMapNode url="Page/PageMaintenance.aspx" title ="Page Maintenance" roles="PageEditor"></siteMapNode>
+        <siteMapNode url="Page/CompanyList.aspx" title ="Company Maintenance" roles="PageEditor"></siteMapNode>
+        <siteMapNode url="FAQ/List.aspx" title ="FAQ Maintenance" roles="PageEditor"></siteMapNode>
+        <siteMapNode url="Page/CreateAD.aspx" title ="AD Edit" roles="PageEditor"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>
